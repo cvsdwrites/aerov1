@@ -5,37 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Q&A</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Physics Q&A</h1>
-        <label for="question-select">Choose a question:</label>
-        <select id="question-select" onchange="showAnswer()">
-            <option value="" disabled selected>Select a question</option>
-            <option value="force">What is force?</option>
-            <option value="velocity">What is velocity?</option>
-        </select>
-        <p id="answer"></p>
-    </div>
-    <script>
-        function showAnswer() {
-            let answers = {
-                "force": "Force is the product of mass and acceleration (F=ma).",
-                "velocity": "Velocity is speed with a direction (v = d/t)."
-            };
-            let selected = document.getElementById("question-select").value;
-            document.getElementById("answer").innerText = answers[selected] || "";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics Q&A</title>
-    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
