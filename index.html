@@ -3,29 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aero - Your Aerospace Study Assistant</title>
+    <title>Aero</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>🛩️ Meet Aero, Your Aerospace Mentor</h1>
-        <p id="aero-message">"Hello! I'm Aero. Need help with aerospace equations?"</p>
-
-        <label for="equation">Choose an equation:</label>
-        <select id="equation" onchange="updateInputs()">
-            <option value="lift">Lift Equation (L = 0.5 * ρ * V² * S * Cl)</option>
-            <option value="drag">Drag Equation (D = 0.5 * ρ * V² * S * Cd)</option>
-            <option value="thrust">Thrust Equation (T = m * a)</option>
+        <h1>Hi, I'm Aero</h1>
+        <p>Pick a tool you'd like to use:</p>
+        <select id="tool-select">
+            <option value="" disabled selected>Select an option</option>
+            <option value="calculator.html">Physics Calculator</option>
+            <option value="questions.html">Physics Q&A</option>
         </select>
-
-        <div id="input-fields"></div>
-
-        <button onclick="calculate()">Calculate</button>
-
-        <h2 id="result"></h2>
-        <p id="message"></p>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
