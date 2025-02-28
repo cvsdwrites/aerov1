@@ -88,3 +88,15 @@ function similarity(str1, str2) {
     
     return matchCount / longer.length;
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const selectBox = document.getElementById("tool-select");
+    
+    if (selectBox) {
+        selectBox.addEventListener("change", function () {
+            let selectedPage = this.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        });
+    }
+});
